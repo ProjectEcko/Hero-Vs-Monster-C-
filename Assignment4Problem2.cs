@@ -7,16 +7,16 @@ namespace Hero_vs_Monster
         static void Main(string[] args)
         {
             int HeroHealth, HeroWeapon, MonsterHealth, MonsterWeapon;
-            Console.Write("Enter the hero's starting hit points: ");
+            Console.Write("Enter the hero's starting hit points: "); // Enter hero's health
             HeroHealth = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter the damage the hero's weapon does per strike: ");
+            Console.Write("Enter the damage the hero's weapon does per strike: "); // Enter Hero's Weapon Damage
             HeroWeapon = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter the monster's starting hit points: ");
+            Console.Write("Enter the monster's starting hit points: "); // Enter Monster's Health
             MonsterHealth = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter the monster's damage per strike: ");
+            Console.Write("Enter the monster's damage per strike: "); // Enter Monster's Weapon Damage
             MonsterWeapon = Convert.ToInt32(Console.ReadLine());
             int round = 0;            
-            while (HeroHealth>0 && MonsterHealth > 0)
+            while (HeroHealth>0 && MonsterHealth > 0) // Loop to start fight
             {
                 Console.WriteLine("====== Round " + (round += 1) + " ======");
                 Random r = new Random();
